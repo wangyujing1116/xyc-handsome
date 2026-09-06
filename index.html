@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About me - Xing Yucheng</title>
+<meta name="description" content="Xing Yucheng's academic portfolio">
+<style>
+  /* Visual language follows the AcademicPages / Minimal Mistakes theme
+     used on mister-he.github.io: white page, left profile sidebar,
+     system sans-serif, thin rules under section headings. */
+  :root {
+    --text: #494e52;
+    --text-light: #7a8288;
+    --heading: #494e52;
+    --link: #52adc8;
+    --rule: #f2f3f3;
+    --border: #e6e6e6;
+    --masthead: #494e52;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 16px; }
+  body {
+    margin: 0;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+  /* masthead */
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding: 1em 0;
+  }
+  .masthead-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 1em;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .site-title { font-size: 1.25em; font-weight: 700; color: var(--masthead); }
+  .site-nav a { color: var(--masthead); margin-left: 1.5em; font-size: .95em; }
+
+  /* layout */
+  .page {
+    max-width: 1280px; margin: 0 auto; padding: 2em 1em;
+    display: grid; grid-template-columns: 250px 1fr; gap: 3em;
+  }
+  @media (max-width: 768px) {
+    .page { grid-template-columns: 1fr; gap: 2em; }
+    .sidebar { text-align: center; }
+    .sidebar ul { display: inline-block; text-align: left; }
+  }
+
+  /* sidebar */
+  .sidebar { font-size: .9em; }
+  .avatar {
+    width: 175px; height: 175px; border-radius: 50%; object-fit: cover;
+    display: block; margin: 0 auto 1em;
+    background: #eee; border: 1px solid var(--border);
+  }
+  .author-name { font-size: 1.25em; font-weight: 700; margin: 0; color: var(--heading); text-align: center; }
+  .author-bio { margin: .25em 0 1em; color: var(--text-light); text-align: center; }
+  .sidebar ul { list-style: none; padding: 0; margin: 0; }
+  .sidebar li { padding: .35em 0; }
+  .sidebar li .icon { display: inline-block; width: 1.25em; color: var(--text-light); }
+  .sidebar hr { border: 0; border-top: 1px solid var(--rule); margin: 1em 0; }
+
+  /* content */
+  .content h1 {
+    font-size: 1.5em; font-weight: 700; color: var(--heading);
+    margin: 0 0 .75em; padding-bottom: .4em; border-bottom: 1px solid var(--rule);
+  }
+  .content section { margin-bottom: 2.5em; }
+  .content p { margin: 0 0 1em; }
+  .pub { margin-bottom: 1.25em; }
+  .pub .venue { font-size: .85em; color: var(--text-light); }
+  .pub .title { display: block; font-weight: 600; }
+  .pub .authors { font-size: .95em; }
+  .pub .authors strong { color: var(--heading); }
+  .content ul.skills { padding-left: 1.25em; margin: 0; }
+
+  /* footer */
+  .footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 2em; padding: 1.5em 1em; font-size: .85em; color: var(--text-light);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="site-title" href="/">Xing Yucheng</a>
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#skills">Skills</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <!-- Replace profile.jpg with a real photo in the same folder -->
+    <img class="avatar" src="profile.jpg" alt="Xing Yucheng" onerror="this.style.visibility='hidden'">
+    <p class="author-name">Xing Yucheng</p>
+    <p class="author-bio">Keep learning</p>
+    <hr>
+    <ul>
+      <li><span class="icon">&#9906;</span> Singapore</li>
+      <li><span class="icon">&#127979;</span> National University of Singapore</li>
+      <!-- Fill in the real addresses below -->
+      <li><span class="icon">&#9993;</span> <a href="mailto:EMAIL@u.nus.edu">Email</a></li>
+      <li><span class="icon">&#127891;</span> <a href="https://scholar.google.com/">Google Scholar</a></li>
+      <li><span class="icon">&#128279;</span> <a href="https://www.researchgate.net/profile/Yucheng-Xing-2">ResearchGate</a></li>
+      <li><span class="icon">&#128025;</span> <a href="https://github.com/">GitHub</a></li>
+      <li><span class="icon">&#128188;</span> <a href="https://www.linkedin.com/">LinkedIn</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <section id="about">
+      <h1>About me</h1>
+      <p>I'm Yucheng Xing (邢宇程), a PhD student at the Saw Swee Hock School of Public Health,
+      National University of Singapore, supervised by
+      <a href="https://www.researchgate.net/lab/Mengling-Feng-Lab">A/Prof. Mengling Feng</a>.</p>
+      <p>My research focuses on uncertainty quantification and evidential deep learning for
+      medical AI — in particular survival prediction from whole-slide pathology images and
+      multimodal clinical data, with an emphasis on calibration, robustness under domain shift,
+      and missing modalities.</p>
+      <p>Open to collaborations. Feel free to reach out if you are interested in my research!</p>
+    </section>
+
+    <section id="publications">
+      <h1>Publications</h1>
+
+      <div class="pub">
+        <span class="venue">Preprint, 2026</span>
+        <a class="title" href="https://www.researchgate.net/publication/407287624_Semantic-Anchored_Evidential_Fusion_for_Domain-Robust_Whole-Slide_Survival_Analysis">Semantic-Anchored Evidential Fusion for Domain-Robust Whole-Slide Survival Analysis</a>
+        <span class="authors"><strong>Yucheng Xing</strong>, Ling Huang, Pei Liu, et al., Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">Preprint, 2026</span>
+        <a class="title" href="https://www.researchgate.net/publication/407511340_Evidential_Fusion_Network_for_Multimodal_Survival_Prediction_under_Missing_Modalities">Evidential Fusion Network for Multimodal Survival Prediction under Missing Modalities</a>
+        <span class="authors"><strong>Yucheng Xing</strong>, Hailan Mo, Zi Wang, et al., Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">Preprint, 2026</span>
+        <a class="title" href="https://www.researchgate.net/publication/404990816_Bridging_the_Modality_Bottleneck_in_Pathology_MIL_through_Virtual_Molecular_Staining">Bridging the Modality Bottleneck in Pathology MIL through Virtual Molecular Staining</a>
+        <span class="authors"><strong>Yucheng Xing</strong>, Pei Liu, Jingying Ma, et al., Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">Preprint, 2025</span>
+        <a class="title" href="https://www.researchgate.net/publication/396094617_DPsurv_Dual-Prototype_Evidential_Fusion_for_Uncertainty-Aware_and_Interpretable_Whole-Slide_Image_Survival_Prediction">DPsurv: Dual-Prototype Evidential Fusion for Uncertainty-Aware and Interpretable Whole-Slide Image Survival Prediction</a>
+        <span class="authors"><strong>Yucheng Xing</strong>, Ling Huang, Jingying Ma, et al., Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">International Journal of Approximate Reasoning, 2025</span>
+        <a class="title" href="https://www.researchgate.net/publication/389572983_Evidential_time-to-event_prediction_with_calibrated_uncertainty_quantification">Evidential time-to-event prediction with calibrated uncertainty quantification</a>
+        <span class="authors">Ling Huang, <strong>Yucheng Xing</strong>, Swapnil Mishra, Thierry Denœux, Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">IEEE Transactions on Fuzzy Systems, 2025</span>
+        <a class="title" href="https://www.researchgate.net/publication/396806344_EsurvFusion_An_evidential_multimodal_survival_fusion_model_based_on_Epistemic_random_fuzzy_sets">EsurvFusion: An Evidential Multimodal Survival Fusion Model Based on Epistemic Random Fuzzy Sets</a>
+        <span class="authors">Ling Huang, <strong>Yucheng Xing</strong>, Qika Lin, et al., Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">ICLR 2026</span>
+        <a class="title" href="https://www.researchgate.net/publication/392596584_CodeBrain_Bridging_Decoupled_Tokenizer_and_Multi-Scale_Architecture_for_EEG_Foundation_Model">CodeBrain: Bridging Decoupled Tokenizer and Multi-Scale Architecture for EEG Foundation Model</a>
+        <span class="authors">Jingying Ma, Feng Wu, Qika Lin, <strong>Yucheng Xing</strong>, Chenyu Liu, Ziyu Jia, Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">Preprint, 2026</span>
+        <a class="title" href="https://www.researchgate.net/publication/400970892_Structured_Prototype-Guided_Adaptation_for_EEG_Foundation_Models">Structured Prototype-Guided Adaptation for EEG Foundation Models</a>
+        <span class="authors">Jingying Ma, Feng Wu, <strong>Yucheng Xing</strong>, et al., Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">Lecture Notes in Computer Science (BELIEF), 2024</span>
+        <a class="title" href="https://www.researchgate.net/publication/383251895_An_Evidential_Time-to-Event_Prediction_Model_Based_on_Gaussian_Random_Fuzzy_Numbers">An Evidential Time-to-Event Prediction Model Based on Gaussian Random Fuzzy Numbers</a>
+        <span class="authors">Ling Huang, <strong>Yucheng Xing</strong>, Thierry Denœux, Mengling Feng</span>
+      </div>
+
+      <div class="pub">
+        <span class="venue">Medical Image Analysis, 2024</span>
+        <a class="title" href="https://www.researchgate.net/publication/381319369_A_review_of_uncertainty_quantification_in_medical_image_analysis_Probabilistic_and_non-probabilistic_methods">A review of uncertainty quantification in medical image analysis: Probabilistic and non-probabilistic methods</a>
+        <span class="authors">Ling Huang, Su Ruan, <strong>Yucheng Xing</strong>, Mengling Feng</span>
+      </div>
+
+      <p><a href="https://www.researchgate.net/profile/Yucheng-Xing-2">Full list on ResearchGate</a></p>
+    </section>
+
+    <section id="skills">
+      <h1>Skills</h1>
+      <ul class="skills">
+        <li>Coding: Python, PyTorch, R, Linux</li>
+        <li>Research: uncertainty quantification, evidential deep learning, survival analysis, computational pathology</li>
+        <li>Technical writing: Markdown, LaTeX, HTML</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<footer class="footer">
+  &copy; 2026 Xing Yucheng &middot; Site last updated 2026-09-06
+</footer>
+
+</body>
+</html>
